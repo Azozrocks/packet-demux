@@ -1,10 +1,10 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -g
 LDFLAGS = -lpcap
-TARGET = demultiplexer
+TARGET = demux
 
-# Added handler.c to the source list
-SRCS = main.c handler.c
+# Include capture.c and main.c. Person 2 will add demux.c here later.
+SRCS = main.c capture.c
 OBJS = $(SRCS:.c=.o)
 
 all: $(TARGET)

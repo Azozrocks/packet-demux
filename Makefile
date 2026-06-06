@@ -3,8 +3,8 @@ CFLAGS = -Wall -Wextra -g
 LDFLAGS = -lpcap
 TARGET = demultiplexer
 
-# Add handler.c to this list once Person 2 provides it
-SRCS = main.c 
+# Added handler.c to the source list
+SRCS = main.c handler.c
 OBJS = $(SRCS:.c=.o)
 
 all: $(TARGET)
